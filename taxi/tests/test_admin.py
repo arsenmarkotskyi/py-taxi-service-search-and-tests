@@ -15,6 +15,7 @@ class AdminTest(TestCase):
         self.driver = get_user_model().objects.create_user(
             username="user",
             password="testdriver",
+            email="user@example.com",
             license_number="123456",
         )
 
